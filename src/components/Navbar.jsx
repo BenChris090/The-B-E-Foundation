@@ -21,7 +21,7 @@ const Navbar = () => {
     }
     
     return ( 
-        <nav className="flex static top-0 p-2 px-6 items-center justify-center space-x-12 max-w-full bg-gray-100">
+        <nav className="flex static top-0 p-2 px-6 items-center justify-between lg:justify-center lg:space-x-12 max-w-full bg-gray-100">
             {/* mobile nav starts here */}
             <div id="mNav" className="h-screen w-screen space-y-auto text-center items-center justify-center hidden z-0 fixed left-0 top-0 bg-gray-100 overflow-x-hidden overflow-y-auto ease-in duration-500">
                 <div className="p-4 m-2 h-3/4">
