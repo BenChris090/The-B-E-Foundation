@@ -25,7 +25,7 @@ const Home = () => {
         <div className="home h-full bg-white">
             <Navbar/>
             <div className="p-6 w-full bg-[url('./images/bg8.jpg')] bg-no-repeat bg-cover bg-center items-center space-y-4 lg:px-24 lg:space-y-4 lg:justify-around lg:h-[28rem] lg:max-h-[29rem]">
-                <div className="header bg-green-600 bg-opacity-50 lg:bg-opacity-100 text-black px-4 rounded-3xl py-4 space-y-2">
+                <div className="header bg-green-600 bg-opacity-50 lg:bg-opacity-0 text-black px-4 rounded-3xl py-4 space-y-2">
                     <h1 class="top-3 text-sky-600 lg:text-green-600 font-bold text-3xl lg:text-5xl lg:max-w-4xl">Welcome to...<br/><p className="text-white lg:text-black text-justify text-lg lg:text-xl">
                     The Betterment and Empowerment Foundation (BEF), where we transform lives in the Niger Delta. 
                     Founded on the belief that everyone deserves a chance at a better life, 
