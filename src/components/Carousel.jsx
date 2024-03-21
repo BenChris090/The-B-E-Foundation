@@ -18,7 +18,7 @@ const Carousel = ({ slides }) => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="w-full h-96 lg:h-128 xl:h-144 flex-shrink-0 relative"
+              className="w-full h-full lg:h-128 xl:h-144 flex-shrink-0 relative"
             >
               {slide}
             </div>
