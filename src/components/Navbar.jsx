@@ -21,7 +21,7 @@ const Navbar = () => {
     }
     
     return ( 
-        <nav className="flex static top-0 p-2 px-6 items-center justify-between lg:justify-center lg:space-x-12 max-w-full bg-gray-100">
+        <nav className="flex static top-0 p-2 px-6 items-center justify-between lg:justify-center lg:space-x-12 max-w-full bg-white">
             {/* mobile nav starts here */}
             <div id="mNav" className="h-screen w-screen space-y-auto text-center items-center justify-center hidden z-0 fixed left-0 top-0 bg-gray-100 overflow-x-hidden overflow-y-auto ease-in duration-500">
                 <div className="p-4 m-2 h-3/4">
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* mobile nav ends here */}
-            <Link to="/" className="flex items-center"><img src={ BE_FOUNDATION_LOGO } className="h-12 mr-1 sm:h-16 lg:h-16" alt="Logo"/></Link>
+            <Link to="/" className="flex items-center"><img src={ BE_FOUNDATION_LOGO } className="h-12 mr-1 sm:h-16 lg:h-16" alt="Logo"/><span className="self-center flex text-2xl font-bold font-truculenta-fnt whitespace-nowrap text-sky-600 lg:hidden lg:text-4xl">B.E.F</span></Link>
             <div className="bars space-x-2 flex items-center ml-auto">
                 <FaBars className="text-2xl flex text-sky-600 my-2 lg:hidden" onClick={setNav}/>
             </div>
