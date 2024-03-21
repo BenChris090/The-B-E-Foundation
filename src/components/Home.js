@@ -55,6 +55,7 @@ const Home = () => {
                 <section className="px-4 py-10 justify-center items-center space-y-4 lg:flex lg:space-y-0 lg:space-x-4 lg:px-16">
                     <div className="container mx-auto">
                         <Carousel slides={slides} />
+                        <p></p>
                     </div>
                 </section>
             </div>
