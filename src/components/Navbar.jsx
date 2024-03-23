@@ -25,11 +25,11 @@ const Navbar = () => {
             {/* mobile nav starts here */}
             <div id="mNav" className="h-screen w-screen space-y-auto text-center items-center justify-center hidden z-10 fixed left-0 top-0 bg-gray-100 overflow-x-hidden overflow-y-auto ease-in duration-500">
                 <div className="p-4 m-2 h-3/4">
-                <FaTimes className="text-2xl text-sky-600 ml-auto mb-8" onClick={setNav}/>
-                <NavLink to="/" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F'})}  className="mt-5 text-center space-y-2 block text-xl">Home</NavLink>
-                <NavLink to="/our-work" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F',})}  className="mt-10 text-center space-y-2 block text-xl">Our Work</NavLink>
-                <NavLink to="/about" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F'})}  className="mt-10 text-center space-y-2 block text-xl">About Us</NavLink>
-                <NavLink to="/get-involved" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F'})}  className="mt-10 text-center space-y-2 block text-xl">Get Involved</NavLink>
+                    <FaTimes className="text-2xl text-sky-600 ml-auto mb-8" onClick={setNav}/>
+                    <NavLink to="/" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F'})}  className="mt-5 text-center space-y-2 block text-xl">Home</NavLink>
+                    <NavLink to="/our-work" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F',})}  className="mt-10 text-center space-y-2 block text-xl">Our Work</NavLink>
+                    <NavLink to="/about" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F'})}  className="mt-10 text-center space-y-2 block text-xl">About Us</NavLink>
+                    <NavLink to="/get-involved" style={({ isActive }) => (isActive ? {color: '#0f93d7'} : {color: '#2F4F4F'})}  className="mt-10 text-center space-y-2 block text-xl">Get Involved</NavLink>
                 </div>
             </div>
             {/* mobile nav ends here */}
