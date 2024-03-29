@@ -4,54 +4,73 @@ import { NavLink,Link } from "react-router-dom";
 import React from 'react';
 
 // Component for individual projects or outreaches
-const ProjectCard = ({ title, description }) => (
+const ProjectCard = ({ title, description, date }) => (
   <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-sky-600 bg-opacity-50 m-4">
     <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">{title}</div>
+      <div className="font-bold text-xl mb-2">{title} <br /> {date}</div>
       <p className="text-white text-base">{description}</p>
     </div>
   </div>
 );
 
+const workData = [
+  {
+    title: 'Empowering Women and Girls',
+    description: 'Supporting gender equality initiatives and empowering women and girls in the Niger Delta region through education and economic opportunities.',
+    date: '08/03/2022' // Generated date
+  },
+  {
+    title: 'Agricultural Advancement',
+    description: 'Promoting sustainable farming practices and providing resources to boost agricultural productivity and food security.',
+    date: '15/06/2022' // Generated date
+  },
+  {
+    title: 'Health and Nutrition',
+    description: 'Improving health outcomes by providing access to nutritious food, clean water, and healthcare services.',
+    date: '29/09/2022' // Generated date
+  },
+  {
+    title: 'Economic Development',
+    description: 'Fostering economic growth by offering microfinance loans, business training, and support for small enterprises.',
+    date: '12/11/2022' // Generated date
+  },
+  {
+    title: 'Idjerhe Kingdom Outreach',
+    description: 'Providing support to old women and widows in Ethiope West, Delta State, Nigeria, ensuring they have access to the resources and care they need.',
+    date: '14/12/2023' // Specified date
+  },
+
+  // Add more entries as needed
+];
+
+
 // Main component for the Our Work page
+const OurWorkSection = ({ title, description, date }) => (
+  <div className="max-w-md mx-auto bg-green-600 bg-opacity-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl my-4">
+    <div className="md:flex">
+      <div className="p-8">
+        <div className="tracking-wide text-2xl lg:text-3xl text-sky-600 font-bold">{title} <br /> {date}</div>
+        <p className="mt-2 text-white text-lg lg:text-xl">{description}</p>
+      </div>
+    </div>
+  </div>
+);
+
 const OurWork = () => {
   return (
-    <div>
-        <Navbar/>
-        <div className="header text-black px-6 lg:px-24 py-4 bg-[url('./images/bg7.jpg')] bg-no-repeat bg-cover bg-center space-y-2">
-            <section className="bg-[url('./images/bg8.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-30 rounded-3xl py-2">
-                <div className="container mx-auto px-6">
-                    <h1 className="text-center text-2xl lg:text-4xl font-extrabold text-gray-800 mb-8">
-                    Our Initiatives
-                    </h1>
-                    <div className="flex flex-wrap justify-center">
-                    <ProjectCard
-                        title="Financial Empowerment"
-                        description="Providing microfinance loans, financial literacy workshops, and investment training to foster growth and prosperity."
-                    />
-                    <ProjectCard
-                        title="Agricultural Development"
-                        description="Supporting modern farming techniques and equipment to enhance productivity and ensure food security."
-                    />
-                    <ProjectCard
-                        title="Community Outreach"
-                        description="Directly addressing the needs of the community by distributing foodstuffs and offering cash assistance."
-                    />
-                    <ProjectCard
-                        title="Idjerhe Kingdom Outreach"
-                        description="Focused support for old women and widows in Ethiope West, Delta State, Nigeria, ensuring access to resources and care."
-                    />
-                    {/* Add more ProjectCard components as needed */}
-                    </div>
-                </div>
-            </section>
+    <div className="about h-full">
+      <Navbar/>
+      <div className="bg-[url('./images/bg8.jpg')] bg-no-repeat bg-cover bg-center min-h-screen p-5">
+        <div className="text-center text-3xl lg:text-5xl font-bold my-5 text-sky-600">Our Work</div>
+        <div className="space-y-4">
+          {workData.map((work, index) => (
+            <OurWorkSection key={index} title={work.title} description={work.description} />
+          ))}
         </div>
-        <FootBar/>
+        </div>
+      <FootBar/>
     </div>
-    
   );
 };
 
 export default OurWork;
-
-

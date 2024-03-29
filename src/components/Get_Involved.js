@@ -1,53 +1,102 @@
-import { Link } from "react-router-dom";
-import { FaInstagram, FaLinkedin, FaTerminal, FaTwitter } from "react-icons/fa";
 import Navbar from "./Navbar";
 import FootBar from "./Footbar";
+import { NavLink,Link } from "react-router-dom";
+import React from 'react';
 
-const Get_Involved = () => {
-    return ( 
-        <div className="contact h-max bg-white">
-            <Navbar/>
-            <div className="body lg:flex p-4 mt-7 lg:justify-around lg:mx-auto lg:px-auto lg:max-w-6xl lg:mt-10">
-                <div className="space-y-4 w-full pt-7 lg:overflow-y-auto lg:w-1/2 lg:py-2">
-                    <h1 className="flex space-x-2 text-black text-3xl lg:text-6xl"><span><FaTerminal className="text-cyan-500"/></span><b  id="txtHead" class="ease-in duration-500" >Contact_Us</b></h1>
-                    <p className="text-black text-lg text-justify ease-in duration-500">Welcome to Volunteer Energy, your dedicated source for innovative solutions in oil and gas consulting and high-quality general merchandise services. 
-                    We are here to power your projects and elevate your business.</p>
-                    <p className="text-black text-lg text-justify ease-in duration-500">Feel free to contact us for any inquiries, feedback, or collaboration opportunities. 
-                    We pride ourselves on responsive communication and are dedicated to providing personalized assistance to meet your specific needs.</p>
-                    <p class="flex space-x-2 text-lg lg:text-xl">
-                        <Link to="https://twitter.com"><FaTwitter className="text-2xl text-black hover:text-pink-600 ease-in duration-500"/></Link>
-                        <Link to="https://linkedin.com"><FaLinkedin className="text-2xl text-black ml-4 lg:ml-20 hover:text-pink-600 ease-in duration-500"/></Link>
-                        <Link to="https://instagram.com"><FaInstagram className="text-2xl text-black ml-4 lg:ml-20 hover:text-pink-600 ease-in duration-500"/></Link>
-                    </p>
-                    <p class="text-lg text-cyan-500 text-justify"><Link to="">onyedikachimike87@gmail.com</Link>, +2348037551558</p>
-                    <div class="py-2 lg:hidden">
-                        <form action="">
-                            <input className="w-full text-white p-2 border-2 border-pink-600 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
-                                placeholder="Name"/> <br/>
-                            <input className="w-full text-white p-2 border-2 border-pink-600 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="email"
-                                placeholder="Email"/> <br/>
-                            <textarea className="w-full text-white p-2 placeholder:-translate-y-0 border-2 border-pink-600 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
-                                rows="10" cols="5" placeholder="Your message"></textarea> <br/>
-                            <button id="txtBod6"
-                                className="w-full p-2 text-lg border-2 border-pink-800 bg-pink-600 rounded-lg ease-in duration-500 mt-4">Send message</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="p-2 hidden lg:block lg:w-1/3">
-                    <form>
-                        <input className="w-full text-black p-2 border-2 border-pink-600 bg-gray-100 rounded-lg ease-in duration-500 mt-4" type="text"
-                            placeholder="Name"/> <br/>
-                        <input className="w-full text-black p-2 border-2 border-pink-600 bg-gray-100 rounded-lg ease-in duration-500 mt-4" type="email"
-                            placeholder="Email"/> <br/>
-                        <textarea className="w-full text-black p-2 border-2 border-pink-600 bg-gray-100 rounded-lg ease-in duration-500 mt-4" type="text"
-                            rows="10" cols="5" placeholder="Your message"></textarea> <br/>
-                        <button
-                            className="w-full p-2 text-lg border-2 border-cyan-500 bg-pink-600 rounded-lg ease-in duration-500 mt-4">Send message</button>
-                    </form>
+const involvementOptions = [
+  {
+    title: 'Volunteer',
+    description: 'Join our team of dedicated volunteers and make a direct impact in the Niger Delta community. Your time and skills can contribute to the empowerment of those in need.',
+    date: 'Ongoing'
+  },
+  {
+    title: 'Donate via Bank Transfer',
+    description: 'Support our initiatives by making a secure bank transfer. This method ensures that your contribution goes directly towards our programs and services.',
+    date: 'Ongoing',
+    bankDetails: {
+      bankName: 'Niger Delta Development Bank',
+      accountNumber: '1234567890',
+      sortCode: '00-00-00',
+      swiftCode: 'NDDGBNLA',
+      accountName: 'Betterment and Empowerment Foundation'
+    }
+  },
+  {
+    title: 'Partner',
+    description: 'Collaborate with us to expand our reach and enhance our programs. We welcome partnerships with organizations and individuals who share our vision for a better Niger Delta.',
+    date: 'Ongoing'
+  },
+  {
+    title: 'Advocate',
+    description: 'Raise awareness about the challenges faced by the Niger Delta region. Use your voice to advocate for change and mobilize resources to support our cause.',
+    date: 'Ongoing'
+  },
+  {
+    title: 'Register',
+    description: 'To register with the foundation is ten thousand naira, and three months monthly due ahead, ten thousand naira per month. However, choosing to pay one year monthly due ahead is also an option.',
+    date: 'Ongoing',
+    fees: { // Added fees object here
+      registrationFee: '₦10,000',
+      monthlyDue: '₦10,000',
+      threeMonthsDue: '₦30,000',
+      annualDue: '₦120,000'
+    },
+    bankDetails: {
+      bankName: 'Niger Delta Development Bank',
+      accountNumber: '1234567890',
+      sortCode: '00-00-00',
+      swiftCode: 'NDDGBNLA',
+      accountName: 'Betterment and Empowerment Foundation'
+    }
+  },
+];
+
+const GetInvolvedSection = ({ title, description, date, bankDetails, fees }) => (
+    <div className="max-w-md mx-auto bg-green-600 bg-opacity-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl my-4">
+      <div className="md:flex">
+        <div className="p-8">
+          <div className="tracking-wide text-white text-2xl lg:text-3xl font-bold">{title}</div>
+          <p className="mt-2 text-white text-lg lg:text-xl">{description}</p>
+          {fees && (
+            <div className="mt-4">
+              <p className="text-white text-lg lg:text-xl">Registration Fee: {fees.registrationFee}</p>
+              <p className="text-white text-lg lg:text-xl">Monthly Due: {fees.monthlyDue}</p>
+              <p className="text-white text-lg lg:text-xl">Three Months Due: {fees.threeMonthsDue}</p>
+              <p className="text-white text-lg lg:text-xl">Annual Due: {fees.annualDue}</p>
+            </div>
+          )}
+          {bankDetails && (
+            <div className="mt-4">
+              <p className="text-white text-lg lg:text-xl mb-5">Please include the intent of your payment (e.g., 'donation', 'registration') in the transfer description.</p>
+              <p className="text-white text-lg lg:text-xl">Bank Name: {bankDetails.bankName}</p>
+              <p className="text-white text-lg lg:text-xl">Account Number: {bankDetails.accountNumber}</p>
+              <p className="text-white text-lg lg:text-xl">Sort Code: {bankDetails.sortCode}</p>
+              <p className="text-white text-lg lg:text-xl">SWIFT Code: {bankDetails.swiftCode}</p>
+              <p className="text-white text-lg lg:text-xl">Account Name: {bankDetails.accountName}</p>
+              <p className="text-white text-lg lg:text-xl mt-5">After completing the payment, please reach out to us with your payment confirmation at contact@foundation.org.</p>
+            </div>
+          )}
+          <span className="text-sky-600">{date}</span>
+        </div>
+      </div>
+    </div>
+  );
+  
+const GetInvolvedPage = () => {
+  return (
+    <div className="about h-full">
+        <Navbar/>
+        <div className="bg-[url('./images/bg6.jpg')] bg-no-repeat bg-cover bg-center min-h-screen p-5">
+            <div className="text-center text-3xl lg:text-5xl font-bold my-5 text-sky-600">Get Involved</div>
+                <div className="space-y-4">
+                    {involvementOptions.map((option, index) => (
+                        <GetInvolvedSection key={index} {...option} />
+                    ))}
                 </div>
             </div>
-        </div>
-     );
-}
- 
-export default Get_Involved;
+            <FootBar/>
+    </div>
+  );
+};
+
+export default GetInvolvedPage;

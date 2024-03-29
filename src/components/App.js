@@ -3,6 +3,7 @@ import Home from './Home';
 import OurWork from './Our_Work';
 import About from './About';
 import Get_Involved from './Get_Involved';
+import ReachOutForm from './ReachOutForm';
 import Four0Four from './404';
 
 
@@ -16,6 +17,7 @@ function App() {
             <Route path='/our-work' element={<OurWork/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/get-involved' element={<Get_Involved/>}/>
+            <Route path='/reach-out-form' element={<ReachOutForm/>}/>
             <Route path='/404' element={<Four0Four/>}/>
           	<Route path="*" element={<Navigate to="/404" />}/>
           </Routes>
