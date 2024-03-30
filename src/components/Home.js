@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import FootBar from "./Footbar";
 import Carousel from './Carousel';
 import { NavLink,Link } from "react-router-dom";
-import { FaAt, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaAt, FaFacebook, FaStar, FaInstagram, FaTwitter } from "react-icons/fa";
 import { BsApple,BsAndroid2 } from "react-icons/bs"
 
 
@@ -32,13 +32,13 @@ const Home = () => {
                     BEF is dedicated to eradicating poverty and hunger through direct food and financial aid. 
                     Join us in our journey towards a brighter, self-sustaining future for all.</p>
                     </h1>
-                    <h1><NavLink className="p-2 border-2 border-black lg:border-white text-black lg:text-white rounded-lg bg-white lg:bg-black hover:bg-green-600  ease-in duration-500"><b>Learn More......</b></NavLink></h1>
+                    <h1><NavLink to="/events" className="p-2 border-2 border-black lg:border-white text-black lg:text-white rounded-lg bg-white lg:bg-black hover:bg-green-600  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
 
                     <ul className="flex pt-4 lg:pt-10">
                         <FaAt className="text-3xl lg:text-4xl text-white lg:text-black hover:text-green-600 ease-in duration-500"/>
                         <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
                         <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
-                        <Link to="https://linkedin.com"><FaLinkedin className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
+                        <Link to="https://facebook.com"><FaFacebook className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
                     </ul>
                 </div>
             </div>

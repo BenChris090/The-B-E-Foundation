@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import FootBar from "./Footbar";
 import { NavLink,Link } from "react-router-dom";
-import { FaAt, FaStar, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaAt, FaFacebook, FaStar, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const About = () => {
     let INDEXP = require("../images/bg1.jpg");
@@ -26,7 +26,7 @@ const About = () => {
                         <FaAt className="text-3xl lg:text-4xl hover:text-green-600 ease-in duration-500"/>
                         <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
                         <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
-                        <Link to="https://linkedin.com"><FaLinkedin className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
+                        <Link to="https://facebook.com"><FaFacebook className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
                     </ul>
                 </div>
             </div>

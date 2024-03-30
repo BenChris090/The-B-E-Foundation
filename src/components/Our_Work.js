@@ -15,9 +15,9 @@ const ProjectCard = ({ title, description, date }) => (
 
 const workData = [
   {
-    title: 'Empowering Women and Girls',
-    description: 'Supporting gender equality initiatives and empowering women and girls in the Niger Delta region through education and economic opportunities.',
-    date: '08/03/2022' // Generated date
+    title: 'Promoting Equality in the Niger Delta',
+    description: 'Supporting gender equality initiatives and empowering women, men, girls, boys, and the elderly across the broader Niger Delta region of Nigeria through education and economic opportunities.',
+    date: '08/03/2022' // Generated date,
   },
   {
     title: 'Agricultural Advancement',

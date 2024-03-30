@@ -14,11 +14,9 @@ const involvementOptions = [
     description: 'Support our initiatives by making a secure bank transfer. This method ensures that your contribution goes directly towards our programs and services.',
     date: 'Ongoing',
     bankDetails: {
-      bankName: 'Niger Delta Development Bank',
-      accountNumber: '1234567890',
-      sortCode: '00-00-00',
-      swiftCode: 'NDDGBNLA',
-      accountName: 'Betterment and Empowerment Foundation'
+      bankName: 'Zenith Bank',
+      accountNumber: '1223499323',
+      accountName: 'The Betterment and Empowerment Foundation'
     }
   },
   {
@@ -42,11 +40,9 @@ const involvementOptions = [
       annualDue: '₦120,000'
     },
     bankDetails: {
-      bankName: 'Niger Delta Development Bank',
-      accountNumber: '1234567890',
-      sortCode: '00-00-00',
-      swiftCode: 'NDDGBNLA',
-      accountName: 'Betterment and Empowerment Foundation'
+      bankName: 'Zenith Bank',
+      accountNumber: '1223499323',
+      accountName: 'The Betterment and Empowerment Foundation'
     }
   },
 ];
@@ -70,10 +66,8 @@ const GetInvolvedSection = ({ title, description, date, bankDetails, fees }) => 
               <p className="text-white text-lg lg:text-xl mb-5">Please include the intent of your payment (e.g., 'donation', 'registration') in the transfer description.</p>
               <p className="text-white text-lg lg:text-xl">Bank Name: {bankDetails.bankName}</p>
               <p className="text-white text-lg lg:text-xl">Account Number: {bankDetails.accountNumber}</p>
-              <p className="text-white text-lg lg:text-xl">Sort Code: {bankDetails.sortCode}</p>
-              <p className="text-white text-lg lg:text-xl">SWIFT Code: {bankDetails.swiftCode}</p>
               <p className="text-white text-lg lg:text-xl">Account Name: {bankDetails.accountName}</p>
-              <p className="text-white text-lg lg:text-xl mt-5">After completing the payment, please reach out to us with your payment confirmation at contact@foundation.org.</p>
+              <p className="text-white text-lg lg:text-xl mt-5">After completing the payment, please reach out to us with your payment confirmation at Battermentempowerment.2022@gmail.com</p>
             </div>
           )}
           <span className="text-sky-600">{date}</span>
