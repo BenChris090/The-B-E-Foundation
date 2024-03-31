@@ -14,7 +14,7 @@ const About = () => {
             <Navbar/>
             
             <div className="header text-black px-6 lg:px-24 py-10 bg-[url('./images/bg7.jpg')] bg-no-repeat bg-cover bg-center space-y-2">
-                <div className="header bg-sky-600 bg-opacity-30 text-black px-6 rounded-3xl py-10 space-y-2">
+                <div className="header bg-green-600 bg-opacity-30 text-black px-6 rounded-3xl py-10 space-y-2">
                     <h1 className="text-2xl text-white lg:text-4xl"><b>About the Betterment and Empowerment Foundation (BEF)</b></h1>
                     <p className="text-xl text-white text-justify">Inaugurated on April 5, 2022, the Betterment and Empowerment Foundation (BEF) 
                     is a testament to the collective vision of its founders: Victor Mikie, William Ujor, Friday Ali, Igere James Oghenetega, 
@@ -23,10 +23,10 @@ const About = () => {
 
                     BEF is committed to fostering self-reliance and economic progress through comprehensive development programs. Our initiatives are tailored to endow the people of the Niger Delta with the capabilities to secure a prosperous future.</p>
                     <ul className="flex text-white items-center lg:pt-5 lg:px-2">
-                        <FaAt className="text-3xl lg:text-4xl hover:text-green-600 ease-in duration-500"/>
-                        <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
-                        <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
-                        <Link to="https://facebook.com"><FaFacebook className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
+                        <FaAt className="text-3xl lg:text-4xl hover:text-sky-600 ease-in duration-500"/>
+                        <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
+                        <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
+                        <Link to="https://facebook.com"><FaFacebook className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                     </ul>
                 </div>
             </div>
