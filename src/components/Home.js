@@ -25,20 +25,20 @@ const Home = () => {
         <div className="home h-full bg-white">
             <Navbar/>
             <div className="p-6 w-full bg-[url('./images/bg8.jpg')] bg-no-repeat bg-cover bg-center items-center space-y-4 lg:px-24 lg:space-y-4 lg:justify-around lg:h-[28rem] lg:max-h-[29rem]">
-                <div className="header bg-green-600 bg-opacity-50 lg:bg-opacity-0 text-black px-4 rounded-3xl py-4 space-y-2">
-                    <h1 class="top-3 text-sky-600 lg:text-green-600 font-bold text-3xl lg:text-5xl lg:max-w-4xl">Welcome to...<br/><p className="text-white lg:text-black text-justify text-lg lg:text-xl">
+                <div className="header bg-green-600 bg-opacity-50  text-black px-4 rounded-3xl py-4 space-y-2">
+                    <h1 class="top-3 text-sky-600 font-bold text-3xl lg:text-5xl lg:max-w-4xl">Welcome to...<br/><p className="text-white text-justify text-lg lg:text-xl">
                     The Betterment and Empowerment Foundation (BEF), where we transform lives in the Niger Delta. 
                     Founded on the belief that everyone deserves a chance at a better life, 
                     BEF is dedicated to eradicating poverty and hunger through direct food and financial aid. 
                     Join us in our journey towards a brighter, self-sustaining future for all.</p>
                     </h1>
-                    <h1><NavLink to="/events" className="p-2 text-white rounded-lg  bg-green-500 hover:bg-green-600  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
+                    <h1><NavLink to="/events" className="p-2 rounded-lg  bg-white hover:bg-sky-600  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
 
                     <ul className="flex pt-4 lg:pt-10">
-                        <FaAt className="text-3xl lg:text-4xl text-white lg:text-black hover:text-green-600 ease-in duration-500"/>
-                        <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
-                        <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
-                        <Link to="https://facebook.com"><FaFacebook className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-green-600 ease-in duration-500"/></Link>
+                        <FaAt className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/>
+                        <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
+                        <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
+                        <Link to="https://facebook.com"><FaFacebook className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                     </ul>
                 </div>
             </div>
