@@ -40,7 +40,7 @@ const Events = () => {
     <div className="about h-full">
         <Navbar/>
         <div className="bg-[url('./images/bg6.jpg')] bg-no-repeat bg-cover bg-center min-h-screen p-5">
-            <div className="text-center text-3xl lg:text-5xl font-bold my-5 text-green-600">Upcoming Events</div>
+            <div className="text-center text-3xl lg:text-5xl font-bold my-5 text-sky-600">Upcoming Events</div>
             <div className="space-y-4">
                 {events.map((event) => (
                 <div key={event.id} className="max-w-md mx-auto bg-green-600 bg-opacity-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl my-4">
