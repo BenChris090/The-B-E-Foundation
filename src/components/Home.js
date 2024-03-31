@@ -32,7 +32,7 @@ const Home = () => {
                     BEF is dedicated to eradicating poverty and hunger through direct food and financial aid. 
                     Join us in our journey towards a brighter, self-sustaining future for all.</p>
                     </h1>
-                    <h1><NavLink to="/events" className="p-2 border-2 border-black lg:border-white text-black lg:text-white rounded-lg bg-white lg:bg-black hover:bg-green-600  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
+                    <h1><NavLink to="/events" className="p-2 text-white rounded-lg  bg-green-600 hover:bg-green-700  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
 
                     <ul className="flex pt-4 lg:pt-10">
                         <FaAt className="text-3xl lg:text-4xl text-white lg:text-black hover:text-green-600 ease-in duration-500"/>
