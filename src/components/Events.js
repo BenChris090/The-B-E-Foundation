@@ -7,14 +7,22 @@ import React, { useState } from 'react';
 const eventSection = [
   {
     id: 1,
-    title: 'Charity Movement',
-    date: '2024-09-02',
-    time: '10:00',
-    location: 'Delta State',
-    description: 'Join us for a charity movement event at Delta State.'
+    title: 'School Fees Assistance Program',
+    date: '2024-09-15', // Specific date in September
+    time: '10:00', // Adjusted time
+    location: 'Delta State', // To be further specified
+    description: 'An initiative for students who are yet to pay their school fees. Join us to learn about available assistance and resources as the new academic year approaches.'
   },
-  // Add more events as needed
+  {
+    id: 2,
+    title: 'Holiday Food and Financial Aid Drive',
+    date: '2024-12-14',
+    time: '12:00', // Time remains the same
+    location: 'Delta State', // To be further specified
+    description: 'A drive focused on providing food and financial assistance to those in need during the holiday season. Let’s come together to support our community.'
+  }
 ];
+
 
 const Events = () => {
   const [events, setEvents] = useState(eventSection);

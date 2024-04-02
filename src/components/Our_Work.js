@@ -49,7 +49,8 @@ const OurWorkSection = ({ title, description, date }) => (
   <div className="max-w-md mx-auto bg-green-600 bg-opacity-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl my-4">
     <div className="md:flex">
       <div className="p-8">
-        <div className="tracking-wide text-2xl lg:text-3xl text-white font-bold">{title} <br /> {date}</div>
+        <div className="tracking-wide text-2xl lg:text-3xl text-white font-bold">{title}</div>
+        <p className="mt-2 text-white text-lg lg:text-xl">{date}</p>
         <p className="mt-2 text-white text-lg lg:text-xl">{description}</p>
       </div>
     </div>
