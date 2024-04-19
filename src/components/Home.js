@@ -11,14 +11,31 @@ const Home = () => {
     let HOME_PIC2 = require('../images/bg2.jpg');
     let HOME_PIC3 = require('../images/bg3.jpg');
     let HOME_PIC4 = require('../images/bg4.jpg');
-    let HOME_PIC5 = require('../images/bg5.jpg');
+    let HOME_PIC5 = require('../images/bg05.jpg');
     let HOME_PIC6 = require('../images/bg6.jpg');
     let HOME_PIC7 = require('../images/bg7.jpg');
+    let HOME_PIC8 = require('../images/bg8.jpg');
+    let HOME_PIC9 = require('../images/bg9.jpg');
+    let HOME_PIC10 = require('../images/bg10.jpg');
+    let HOME_PIC11 = require('../images/bg11.jpg');
+    let HOME_PIC12 = require('../images/bg12.jpg');
+    let HOME_PIC14 = require('../images/bg14.jpg');
+    let HOME_PIC15 = require('../images/bg15.jpg');
+    let HOME_PIC16 = require('../images/bg16.jpg');
 
     const slides = [
         <img src={HOME_PIC1} alt="Slide 1" />,
         <img src={HOME_PIC4} alt="Slide 2" />,
         <img src={HOME_PIC3} alt="Slide 3" />,
+        <img src={HOME_PIC2} alt="Slide 4" />,
+        <img src={HOME_PIC5} alt="Slide 5" />,
+        <img src={HOME_PIC9} alt="Slide 6" />,
+        <img src={HOME_PIC10} alt="Slide 7" />,
+        <img src={HOME_PIC11} alt="Slide 8" />,
+        <img src={HOME_PIC12} alt="Slide 9" />,
+        <img src={HOME_PIC16} alt="Slide 10" />,
+        <img src={HOME_PIC14} alt="Slide 11" />,
+        <img src={HOME_PIC15} alt="Slide 12" />,
       ];
 
     return ( 
