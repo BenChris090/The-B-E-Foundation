@@ -2,7 +2,8 @@ import Navbar from "./Navbar";
 import FootBar from "./Footbar";
 import Carousel from './Carousel';
 import { NavLink,Link } from "react-router-dom";
-import { FaWhatsapp, FaFacebook, FaStar, FaInstagram, FaXTwitter } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaStar, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { BsApple,BsAndroid2 } from "react-icons/bs"
 
 
