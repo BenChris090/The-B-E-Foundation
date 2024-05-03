@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import FootBar from "./Footbar";
 import Carousel from './Carousel';
 import { NavLink,Link } from "react-router-dom";
-import { FaAt, FaFacebook, FaStar, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaStar, FaInstagram, FaTwitter } from "react-icons/fa";
 import { BsApple,BsAndroid2 } from "react-icons/bs"
 
 
@@ -52,7 +52,7 @@ const Home = () => {
                     <h1><NavLink to="/events" className="p-2 rounded-lg  bg-white hover:bg-sky-600  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
 
                     <ul className="flex pt-4 lg:pt-10">
-                        <FaAt className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/>
+                        <Link to="wa.link/28f9xe"><FaWhatsapp className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://twitter.com"><FaTwitter className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://facebook.com/profile.php?id=61557411836402"><FaFacebook className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
