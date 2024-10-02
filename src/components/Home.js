@@ -53,7 +53,7 @@ const Home = () => {
                     <h1><NavLink to="/events" className="p-2 rounded-lg  bg-white hover:bg-sky-600  ease-in duration-500"><b>Upcoming Events....</b></NavLink></h1>
 
                     <ul className="flex pt-4 lg:pt-10">
-                        <Link to="https://wa.link/28f9xe"><FaWhatsapp className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/></Link>
+                        <Link to="https://wa.link/xqh4wo"><FaWhatsapp className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://twitter.com"><FaXTwitter className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://facebook.com/profile.php?id=61557411836402"><FaFacebook className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>

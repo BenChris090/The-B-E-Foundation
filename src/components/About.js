@@ -24,7 +24,7 @@ const About = () => {
 
                     BEF is committed to fostering self-reliance and economic progress through comprehensive development programs. Our initiatives are tailored to endow the people of the Niger Delta with the capabilities to secure a prosperous future.</p>
                     <ul className="flex text-white items-center lg:pt-5 lg:px-2">
-                        <Link to="https://wa.link/28f9xe"><FaWhatsapp className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/></Link>
+                        <Link to="https://wa.link/xqh4wo"><FaWhatsapp className="text-3xl lg:text-4xl text-white lg:text-black hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://twitter.com"><FaXTwitter className="text-3xl lg:text-4xl text-white lg:text-black ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://instagram.com"><FaInstagram className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
                         <Link to="https://facebook.com/profile.php?id=61557411836402"><FaFacebook className="text-3xl lg:text-4xl ml-4 lg:ml-20 hover:text-sky-600 ease-in duration-500"/></Link>
